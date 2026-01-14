@@ -1,0 +1,704 @@
+
+@font-face {
+   font-family: 'MinhaFonte';
+   /* Um nome de sua escolha */
+   src: url('./fonts/Chocolates\ Italic\ Personal\ Use.ttf') format('woff2');
+   /* Caminho para o arquivo */
+   font-weight: normal;
+   font-style: normal;
+  
+}
+
+/* RESET */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   background: white;
+   overflow-x: hidden;
+   
+}
+
+/* HEADER */
+header {
+   background: rgb(62 3 3 / 88%);
+   padding: 30px;
+   --mask:
+      radial-gradient(12.83px at 50% calc(100% - 17.6px), #000000 99%, #0000 101%) calc(50% - 22px) 0/44px 100%,
+      radial-gradient(12.83px at 50% calc(100% + 6.6px), #0000 99%, #000000 101%) 50% calc(100% - 11px)/44px 100% repeat-x;
+   -webkit-mask: var(--mask);
+   mask: var(--mask);
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   margin: 10px;
+   margin-left: auto;   
+}
+
+main{
+   
+   background-image: url(img/fundo_produtos_08.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+  
+footer{
+  
+   text-align: center;
+   font-size: 0.5rem;
+   height: auto; 
+    /* Estilos para o rodapé */
+    background-color: #333; /* Cor de fundo que cobre toda a largura */
+   
+    text-align: center;
+    padding: 20px 0; /* Define um padding vertical, 0 horizontal */
+    width: auto; /* Garante que ocupe 100% da largura do body */
+    box-sizing: border-box; /* Garante que padding/borda não adicione largura extra */
+    
+}
+
+
+/* MENU */
+nav {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 15px;
+   flex-wrap: wrap;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+   position: relative;
+   padding: 8px 15px;
+   transition: 0.3s;
+}
+
+nav a::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   width: 0;
+   height: 4px;
+   background: #fff;
+   border-radius: 10px;
+   transition: 0.3s;
+}
+
+nav a:hover::after {
+   width: 100%;
+}
+
+nav a:hover {
+   transform: scale(1.1);
+}
+
+/* SECTIONS */
+section {
+   padding: 60px 20px;
+   max-width: 1200px;
+   margin: auto;
+}
+  
+
+.logo {
+   text-align: center;
+   font-size: 4rem;
+   font-weight: bold;
+   color: #fff;
+   margin-top: -18px;
+}
+
+
+/* INICIO */
+.inicio {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   max-width: 100%;
+   background-image: url(./img/variedade-de-colheres-com-ingredientes.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 999;
+   margin-top: -18px;
+   background-position: center;
+   border-bottom: -20px;
+   height: 800px;  
+ 
+   
+}
+
+.inicio h1{
+   font-size: 3rem;
+   margin-top: 150px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+.inicio img{
+   width: 120vh;
+   z-index: 99;
+   margin-top: -220px;
+   display: flex;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -200px;
+   
+}
+
+.txt{
+   margin-top: 60px;
+}
+
+.txt span{
+    font-family: 'MinhaFonte', sans-serif;
+    color: #d2691e;
+    font-weight: 100px;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.txt p{
+   font-size: 2rem;
+   font-weight: 900;
+}
+
+.txt h1{
+    font-size: 3rem;
+   margin-top: 150px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.what{
+   margin: 100px;
+   color: green;
+   margin-top: -200px; 
+   
+}
+
+.what:hover {
+   background-color:  #1ebe5d;
+   transform: scale(1.05);
+   border-radius: 30px;
+}
+
+
+.sobre h1 {
+   text-align: center;
+   font-size: 5rem;
+   padding: 40px;
+   margin: 20px;
+
+}
+
+.container {
+   display: flex;
+   /* Ativa o Flexbox */
+   align-items: center;
+   /* Centraliza verticalmente */
+   gap: 20px;
+   /* Espaçamento entre imagem e texto */
+   margin: 20px;
+   padding: 40px;
+   background-image: url(./img/redemoinho-de-chocolate-derretido.jpg);
+
+
+}
+
+.container img {
+   width: 800px;
+   /* Ajuste a largura da imagem */
+   height: auto;
+}
+
+/* Estilos para o texto */
+.texto {
+   font-size: 2rem;
+   color: black;
+   text-align: center;
+
+}
+
+
+/* GALERIA DOCE */
+
+.produtos {
+   display: block;
+   text-align: center;
+   margin-top: 10px;
+   
+   
+}
+
+.produtos h2 {
+   padding: 120px;
+   margin-top: -60px;
+   font-size: 5rem;  
+
+   
+}
+
+.overlay a{
+   text-decoration: none;
+}
+
+
+.overlay a span{
+   color: white;
+   font-size: 2rem;
+   
+}
+.galeria h2 {
+   text-align: center;
+   margin-bottom: 30px;
+
+}
+
+.galeria {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 20px;
+}
+
+.foto {
+   position: relative;
+   overflow: hidden;
+   border-radius: 25px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.foto img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: 0.6s ease;
+}
+
+/* EFEITO DOCE */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.foto {
+    position: relative;
+}
+
+.foto:hover .overlay {
+    opacity: 1;
+}
+
+.btn-encomendar {
+    background: #25D366;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.btn-encomendar:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+
+
+/* HOVER */
+.foto:hover img {
+   transform: scale(1.2) rotate(2deg);
+}
+
+.foto:hover .overlay {
+   opacity: 1;
+}
+
+.foto:hover .overlay span {
+   transform: translateY(0);
+ 
+}
+
+
+/* CONTATO */
+
+.contato{
+   width: 100;
+   height: 800px;
+   text-align: center;
+   background-image: url(img/variedade-de-colheres-com-ingredientes.jpg);
+  
+}
+
+.contato h1{
+   color: white; 
+   font-size: 4rem;
+   padding: 10px;
+ 
+}
+
+.contato p{
+   color: wheat;
+   padding: 10px;
+   font-size: 2rem;
+}
+
+.contato span:hover{
+   color: white;
+   cursor: pointer;
+   
+}
+
+
+form {
+max-width: 500px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+
+}
+
+input,
+textarea {
+padding: 15px;
+border-radius: 10px;
+border: 1px solid #ccc;
+font-size: 1rem;
+}
+
+button {
+padding: 15px;
+border: none;
+border-radius: 30px;
+background: #721e27;
+color: #fff;
+font-weight: bold;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background: rgb(62 3 3 / 88%);
+}
+
+
+
+/* redes sociais */
+
+
+ul.box-redes-sociais {
+  
+  display: flex;
+  background: transparent;
+  width: 305px;
+  float: none;
+  margin: auto;
+  padding: 20px;
+
+}
+
+ul.box-redes-sociais li {
+  list-style: none;
+  margin: auto;
+  margin-top: -40px;
+}
+
+
+ul.box-redes-sociais li a {
+  
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 22px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #eaeaea;
+  z-index: 1;
+
+}
+
+ul.box-redes-sociais li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .3s;
+  z-index: 3;
+}
+
+ul.box-redes-sociais li a:hover .icon {
+  color: #fff;
+  scale: 1.2;
+}
+
+ul.box-redes-sociais li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .6s;
+  z-index: 2;
+}
+
+ul.box-redes-sociais li a:hover:before {
+  top: 0;
+}
+
+ul.box-redes-sociais li.facebook a:before{
+  background: #3b5999;
+}
+
+ul.box-redes-sociais li.instagram a:before{
+  background:hsl(0 0% 10%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+/*
+ul.box-redes-sociais li.whatsap a:before{
+  background: green
+}
+
+*/
+
+
+/* ================================
+   RESPONSIVIDADE SEM MUDAR LAYOUT
+   ================================ */
+
+/* Ajustes gerais */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =====================
+   TABLET (até 1024px)
+   ===================== */
+@media (max-width: 1024px) {
+
+    header.chocolate {
+        padding: 15px 20px;
+        margin-top: 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .inicio h1 {
+        font-size: 1.8rem;
+        padding: 0 20px;
+        text-align: center;
+        margin-top: 550px;
+    }
+
+    .container {
+        gap: 20px;
+    }
+
+
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .contato {
+        padding: 40px 20px;
+    }
+}
+
+/* =====================
+   CELULAR (até 768px)
+   ===================== */
+@media (max-width: 768px) {
+
+    /* Header */
+    header.chocolate {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Início */
+    .inicio {
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    /* Sobre */
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+   
+    .produtos h2{
+        margin: -40px;
+    } 
+      
+
+
+    /* Galeria */
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Contato */
+    .contato {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form form {
+        width: 100%;
+    }
+}
+
+/* Em seu arquivo CSS */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #fff;
+    border-radius: 50px; /* Para deixar redondo */
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    display: flex; /* Para centralizar o ícone */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
+
+/* =====================
+   CELULAR PEQUENO (até 480px)
+   ===================== */
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .inicio h1 {
+        font-size: 1.2rem;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    footer h1 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 200px;
+    }
+}
+
+
+/* ================= MEDIA QUERIES ================= */
+
+/* TABLET */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio h1 {
+        font-size: 2rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .chocolate {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inicio h1 {
+        font-size: 1.6rem;
+    }
+
+    .inicio img {
+        max-width: 220px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+
